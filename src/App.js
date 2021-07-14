@@ -59,6 +59,17 @@ class App extends React.Component {
         {/* search result for user found and not found*/}
         { this.state.git.id &&
           <div class="card card-header p-2 my-4">
+            <div className="d-flex justify-content-center">
+              <div className="justify-content-center">
+                <img 
+                  class="rounded-circle"
+                  src={this.state.git.avatar_url} 
+                  alt="github avatar" 
+                  width="130" 
+                  height="130" 
+                />
+              </div>
+            </div>
             <div className="d-flex justify-content-left">
               <div className="justify-content-center">
                 <h3><strong>Username:</strong></h3>
